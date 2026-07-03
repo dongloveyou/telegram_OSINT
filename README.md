@@ -1,28 +1,20 @@
-Kho lưu trữ telegram_OSINT chứa công cụ hỗ trợ thu thập và phân tích thông tin tình báo nguồn mở (OSINT) trên nền tảng Telegram
 
-Thu thập thông tin từ tài khoản, nhóm (Groups) hoặc kênh (Channels) công khai.
-Phân tích dữ liệu, lịch sử tin nhắn hoặc các siêu dữ liệu (metadata) liên quan.
+# 🕵️‍♂️ telegram_OSINT
 
-Hướng dẫn cài đặt 
-Đảm bảo hệ thống của bạn đã cài đặt Python 3.8+ (Khuyến nghị sử dụng các bản phân phối Linux như Kali Linux hoặc cài đặt Python trên Windows)
+Công cụ hỗ trợ thu thập và phân tích thông tin tình báo nguồn mở (OSINT) trên nền tảng Telegram, tối ưu hóa để chạy mượt mà trên môi trường **Termux (Android)** và Linux.
 
+---
 
+## 🚀 Hướng dẫn cài đặt nhanh (All-in-One)
 
-§cài đặt gói phụ thuộc 
+Để đơn giản hóa quá trình cài đặt, toàn bộ các gói hệ thống (`clang`, `git`, `python`...) và các thư viện Python (`telethon`, `pyrogram`...) đã được gộp chung vào một file cấu hình tự động.
 
-pip install -r requirements.txt
- 
-python main.py
+Bạn chỉ cần mở **Termux** lên và copy-paste dòng lệnh duy nhất sau đây:
 
-§ Hướng dẫn cài đặt telegram_OSINT trên Termux (Android)
-Để chạy công cụ này trên điện thoại, bạn cần cài đặt ứng dụng Termux (khuyến nghị tải bản mới nhất từ F-Droid hoặc GitHub, không nên tải từ Google Play vì bản trên đó đã cũ và bị lỗi
-pkg update && pkg upgrade -y
-
-pkg install git python -y
-
-
-git clone https://github.com/dongloveyou/telegram_OSINT.git
-
-cd telegram_OSINT
-pip install -r requirements.txt
+```bash
+pkg update && pkg upgrade -y && pkg install git -y && git clone [https://github.com/dongloveyou/telegram_OSINT.git](https://github.com/dongloveyou/telegram_OSINT.git) && cd telegram_OSINT && chmod +x setup.sh && ./setup.sh
+khởi chạy cấp quyền 
+chmod +x setup.sh
+./setup.sh
+chạy tool
 python main.py
