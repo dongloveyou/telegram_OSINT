@@ -5,7 +5,24 @@ Phân tích dữ liệu, lịch sử tin nhắn hoặc các siêu dữ liệu (m
 
 Hướng dẫn cài đặt 
 Đảm bảo hệ thống của bạn đã cài đặt Python 3.8+ (Khuyến nghị sử dụng các bản phân phối Linux như Kali Linux hoặc cài đặt Python trên Windows)
-cài gói 
+
+
+
+§cài đặt gói phụ thuộc 
+
 pip install -r requirements.txt
-khi khởi chạy 
+ 
+python main.py
+
+§ Hướng dẫn cài đặt telegram_OSINT trên Termux (Android)
+Để chạy công cụ này trên điện thoại, bạn cần cài đặt ứng dụng Termux (khuyến nghị tải bản mới nhất từ F-Droid hoặc GitHub, không nên tải từ Google Play vì bản trên đó đã cũ và bị lỗi
+pkg update && pkg upgrade -y
+
+pkg install git python -y
+
+
+git clone https://github.com/dongloveyou/telegram_OSINT.git
+
+cd telegram_OSINT
+pip install -r requirements.txt
 python main.py
