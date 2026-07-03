@@ -12,9 +12,7 @@ Công cụ hỗ trợ thu thập và phân tích thông tin tình báo nguồn m
 Bạn chỉ cần mở **Termux** lên và copy-paste dòng lệnh duy nhất sau đây:
 
 ```bash
-pkg update && pkg upgrade -y && pkg install git -y && git clone
-
-[https://github.com/dongloveyou/telegram_OSINT.git]
+pkg update && pkg upgrade -y && pkg install git -y && git clone [https://github.com/dongloveyou/telegram_OSINT.git]
 
 (https://github.com/dongloveyou/telegram_OSINT.git) && cd telegram_OSINT && chmod +x setup.sh && ./setup.sh
 
