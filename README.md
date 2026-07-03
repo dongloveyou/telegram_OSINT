@@ -12,14 +12,25 @@ Công cụ hỗ trợ thu thập và phân tích thông tin tình báo nguồn m
 Bạn chỉ cần mở **Termux** lên và copy-paste dòng lệnh duy nhất sau đây:
 
 ```bash
-pkg update && pkg upgrade -y && pkg install git -y && git clone [https://github.com/dongloveyou/telegram_OSINT.git]
+pip install -r requirements.txt
 
-(https://github.com/dongloveyou/telegram_OSINT.git) && cd telegram_OSINT && chmod +x setup.sh && ./setup.sh
+bash
+git clone https://github.com/dongloveyou/telegram_OSINT.git
+cd telegram_OSINT
 
 
-================≠=============
-khởi chạy cấp quyền 
-chmod +x setup.sh
-./setup.sh
-chạy tool
+📱 Hướng dẫn cài đặt telegram_OSINT trên Termux (Android)
+Để chạy công cụ này trên điện thoại, bạn cần cài đặt ứng dụng Termux (khuyến nghị tải bản mới nhất từ F-Droid hoặc GitHub, không nên tải từ Google Play vì bản trên đó đã cũ và bị lỗi).
+Bước 1: Cập nhật hệ thống Termux
+Mở Termux lên và chạy lệnh sau để cập nhật danh sách gói phần mềm hệ thống:
+bash
+pkg update && pkg upgrade -y
+bash
+pkg install git python -y
+
+bash
+git clone https://github.com/dongloveyou/telegram_OSINT.git
+bash
+pip install -r requirements.txt
 python main.py
+
